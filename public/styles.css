@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: "Rubik", sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+}
+
+.container h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: medium;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: x-small;
+    font-weight: bold;
+}
+
+.container input[type="email"],
+.container input[type="password"] {
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.container button[type="submit"] {
+    background-color: #3e79e5;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: small;
+    font-weight: 500;
+}
+
+hr {
+    border: none;
+    /* Remove default border */
+    border-top: 1px solid #e6e5e5;
+    /* Add top border with light gray color */
+    margin: 20px 0;
+    /* Add margin for spacing */
+}
+
+form {
+    margin: 20px;
+}
+
+::placeholder {
+    color: #999;
+}
+
+img {
+    width: 50px;
+    margin-left: 40%;
+    margin-bottom: 5px;
+}
+
+#password {
+    padding-right: 30px; /* Add space for the toggle icon */
+    position: relative; /* Position relative for absolute positioning */
+}
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
